@@ -35,11 +35,11 @@ cascade = "haarcascade_frontalface_default.xml"
 #function for setting up emails
 def send_message(name):
     return requests.post(
-        "https://api.mailgun.net/v3/sandboxe1fc3be9bd514e718ee8b9b690652642.mailgun.org/messages",
-        auth=("api", "f5f7cf5393723e903f625de2cbf9743b-443ec20e-d6011f87"),
+        "https://api.mailgun.net/v3/sandsdsfhfhdfh2642.mailgun.org/messages",
+        auth=("api", "f5f7cf539372dsfgsdgdshdsewrqwrasf6011f87"),
         files = [("attachment", ("image.jpg", open("image.jpg", "rb").read()))],
         data={"from": 'refrigeratorwatcher@example.com',
-            "to": ["yche0445@student.monash.edu"],
+            "to": ["@gmail.com"],
             "subject": "Your Food is been Stolen!",
             "html": "<html>" + name + " is the suspect!  </html>"})
 
